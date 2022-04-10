@@ -7,11 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body bg-slate-700>
-    <h1>Hello !!!</h1>
+<body>
 
-    <div class="flex flex-row bg-white">
-        <div class="flex flex-col basis-1/2 py-20 border-r-2 border-black">
+        <div id="main" class="flex flex-col basis-1/2 py-20 bg-white rounded-3xl">
             <div class="flex flex-row items-center justify-center space-x-8">   
                 <div>
                     <img id="WeatherIcon" class="w-40 h-40" id="weatherIcon" src="" alt="weather icon">
@@ -39,21 +37,17 @@
             </div>
 
 
-        </div>
-        
-        <!-- Location -->
-        <div class="flex basis-1/2 justify-center items-center">
-            <div class="flex flex-wrap justify-center items-end ">
+             <!-- Location -->
+            <div class="flex flex-wrap justify-center items-end pt-20 ">
 
-                <div class="relative space-y-2">
-                  <label for="weatherInput" class=" text-2xl font-bold">Location</label>
-                  <input type="text" id="weatherInput" name="weatherInput" class="w-full border-2 border-black py-2 px-2 ">
+                <div>
+                  <input type="text" id="weatherInput" name="weatherInput" placeholder="Enter your Location" class= "border-2 border-black py-2 px-2 w-80">
                 </div>
                  <button id="weatherBtn" type="submit" class=" border-2 border-black py-2 px-2 bg-black text-white py-2 font-bold ">Set</button>
-                </div>
+            </div>
+
 
         </div>
-    </div>
 
 
     <script src="app.js"></script>
