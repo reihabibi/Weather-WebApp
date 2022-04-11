@@ -5,10 +5,12 @@ body{
 #main{
     height: 550px;
     width: 500px;
+    margin: 5%;
+    margin-top: 20%;
    
 }
 
-@media(min-width: 500px) {
+@media(min-width: 900px) {
     #main {
         position: fixed;
         top: 50%;
