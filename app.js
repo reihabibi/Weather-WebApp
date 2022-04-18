@@ -1,8 +1,13 @@
 $(document).ready(function () {
+
+    $("#Data").hide();
+
     $("#weatherBtn").click(function() {
         const city = $("#weatherInput").val();
         getWeatherData(city);
+        $("#Data").slideDown();
     });
+
 });
 
 async function getWeatherData(city) {
