@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,22 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body class="flex h-screen justify-center items-center bg-gradient-to-r from-slate-300 via-blue-200 to-slate-200" >
+<body class="flex h-screen justify-center items-center bg-gradient-to-r from-slate-300 via-blue-200 to-slate-200">
 
-    <div id="main" class="flex flex-col w-11/12 md:max-w-xl py-20 bg-white rounded-3xl">             
+    <div id="main" class="flex flex-col w-11/12 md:max-w-xl py-20 bg-white rounded-3xl">
 
         <div id="Data" class="mb-20">
             <!-- Main -->
-            <div class="flex flex-row items-center justify-center space-x-8">   
+            <div class="flex flex-row items-center justify-center space-x-8">
                 <div>
                     <img id="WeatherIcon" class="w-40 h-40" id="weatherIcon" src="" alt="weather icon">
-                </div>                
-                <div class="">
+                </div>
+                <div>
                     <span class="text-6xl font-bold" id="weatherTemp">34&deg;</span>
                     <br>
                     <span class="text-3xl" id="weatherDescription"> clear skay</span>
-                </div>      
+                </div>
             </div>
+
             <!-- Min Max -->
             <div class="pt-8 flex flex-row justify-center">
                 <div class="border-r-4 border-black px-20">
@@ -32,22 +34,24 @@
                 </div>
                 <div class="px-20">
                     <p class="text-2xl">min</p>
-                    <span id="temp_min" class="text-4xl font-bold" >32&deg;</span>
+                    <span id="temp_min" class="text-4xl font-bold">32&deg;</span>
                 </div>
             </div>
         </div>
 
         <!-- Location -->
         <div class="flex flex-wrap justify-center items-end">
-                 
             <div>
-              <input type="text" id="weatherInput" name="weatherInput" placeholder="Enter your Location" class= "border-2 border-black py-2 px-2 w-80">
+                <input type="text" id="weatherInput" name="weatherInput" placeholder="Enter your Location"
+                    class="border-2 border-black py-2 px-2 w-80">
             </div>
-             <button id="weatherBtn" type="submit" class=" border-2 border-black py-2 px-2 bg-black text-white font-bold ">Set</button>
-        </div>        
+            <button id="weatherBtn" type="submit"
+                class=" border-2 border-black py-2 px-2 bg-black text-white font-bold ">Set</button>
+        </div>
 
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
